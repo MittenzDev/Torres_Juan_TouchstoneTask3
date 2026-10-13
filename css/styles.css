@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #fff8f0;
+    --card-bg: #ffffff;
+    --primary-color: #6b3e26;
+    --accent-color: #d88c5a;
+    --text-color: #2f2a26;
+    --font-main: 'Open Sans', sans-serif;
+}
+
+html, body, h1, h2, h3, p, ul, li, figure, section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
+
+.video-player {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    margin: 1rem 0;
+}

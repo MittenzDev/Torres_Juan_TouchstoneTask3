@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Twin Cities Animal Rescue</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Twin Cities Animal Rescue</h1>
+        <p>Dedicated to rescuing, rehabilitating, and placing animals into loving homes.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services and Programs</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Volunteer and Foster</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get involved today</h2>
+            <p>Whether you are interested in adopting, fostering, or volunteering, we would love to hear from you. Fill out the interest form below to get started, and our team will be in touch shortly.</p>
+        </section>
+
+        <section>
+            <h2>Meet Our Rescue Families</h2>
+            <p>Watch a heartwarming clip of a foster family spending time with one of our rescued dogs:</p>
+            <video controls class="video-player">
+                <source src="media/rescue-message_c.mp4" type="video/mp4">
+                Your browser does not support video playback. You can <a href="media/rescue-message_c.mp4">download the video clip here</a>
+            </video>
+        </section>
+
+        <section>
+            <h2>Involvement Interest Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact and Interest Information</legend>
+                    <p>
+                        <label for="full-name">Full Name:</label><br>
+                        <input type="text" name="full-name" id="full-name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" name="phone" id="phone">
+                    </p>
+
+                    <p>
+                        <label for="interest-type">I am interested in:</label><br>
+                        <select id="interest-type" name="interest-type" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="adoption">Adopting a Pet</option>
+                            <option value="fostering">Fostering an Animal</option>
+                            <option value="volunteering">Volunteering Time</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Information or Questions</label><br>
+                        <textarea name="comments" id="comments" rows="5" cols="40" placeholder="Tell us a bit about your home environment, past pet experience, or general availability..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit" class="btn">Submit Interest Form</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Community in Action</h2>
+            <p>Whether in large facilities or small setups at home, our community of volunteers makes everything possible.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/rescue-feature-large_c.png">
+                <img src="images/rescue-feature-small_c.png" alt="A smiling man in a wheelchair outdoors with a rescued dog" style="max-width: 500px; width: 100%; height: auto;">
+            </picture>
+        </section>
+    </main>
+
+</body>
+</html>
