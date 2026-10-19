@@ -92,8 +92,8 @@ function renderSavedRoles() {
     savedRolesList.forEach(id => {
         const role = volunteerRoles.find(item => item.id === id);
         if (role) {
-            html += `<li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; width: 440px;">
-            <span style="flex: 1; margin-right: 15px;">&bull; ${role.title} (${role.hours})</span>
+            html += `<li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; width: 100%; flex-wrap: wrap; gap: 10px;">
+            <span style="flex: 1; min-width: 180px;">&bull; ${role.title} (${role.hours})</span>
             <button type="button" class="btn" onclick="removeRolePreference('${role.id}')" style="padding: 6px 14px; white-space: nowrap; margin-top: -2px;">Remove role from list</button>
             </li>`;
         }
