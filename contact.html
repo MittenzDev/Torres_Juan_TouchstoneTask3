@@ -40,18 +40,37 @@
         </section>
 
         <section>
+            <h2>Explore Volunteer Roles</h2>
+            <p>Click a role below to view details and save it to your personal list:</p>
+
+            <div style="margin-bottom: 1rem;">
+                <button type="button" class="btn role-select-btn" data-role-id="dog-walker">Dog Walker</button>
+                <button type="button" class="btn role-select-btn" data-role-id="cat-foster">Cat Foster Parent</button>
+                <button type="button" class="btn role-select-btn" data-role-id="event-assistant">Event Assistant</button>
+                <button type="button" class="btn role-select-btn" data-role-id="transport">Pet Transport Driver</button>
+            </div>
+
+            <div id="role-details-display" style="padding: 1rem; background: #f9f9f9; border-left: 4px solid #0056b3; margin-bottom: 1.5rem;">
+                <p><em>Select a volunteer role above to view requirements and time commitments.</em></p>
+            </div>
+            <div id="saved-roles-summary" style="margin-bottom: 2rem;"></div>
+        </section>
+
+        <section>
             <h2>Involvement Interest Form</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="interest-form" novalidate>
                 <fieldset>
                     <legend>Your Contact and Interest Information</legend>
                     <p>
                         <label for="full-name">Full Name:</label><br>
                         <input type="text" name="full-name" id="full-name" required>
+                        <span id="name-error" style="color: #e60000; font-size: 0.85rem; display: block; margin-top: 3px;"></span>
                     </p>
 
                     <p>
                         <label for="email">Email Address:</label><br>
                         <input type="email" name="email" id="email" required>
+                        <span id="email-error" style="color: #e60000; font-size: 0.85rem; display: block; margin-top: 3px;"></span>
                     </p>
 
                     <p>
@@ -92,5 +111,6 @@
         </section>
     </main>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
